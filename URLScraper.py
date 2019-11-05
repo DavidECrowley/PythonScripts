@@ -1,4 +1,4 @@
-# ScrapeNet - scrapes a desired URL of all links and writes them to a new file
+# URLScraper - scrapes a desired URL of all links and writes them to a new file
 # will overwrite the same file if a new name is not given
 # Uses BeautifulSoup's Library for scraping pages
 
@@ -10,7 +10,7 @@ def ScrapeNet( filename, urls ) :
     try :
         filehandle = open(filename,"w")
     except IOError :
-        print( "*** ScrapeNet : Cannot open the file %s" % ( filename ) )
+        print( "*** URLScraper : Cannot open the file %s" % ( filename ) )
         return
     
     for url in urls :
